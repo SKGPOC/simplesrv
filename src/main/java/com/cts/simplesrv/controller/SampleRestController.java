@@ -18,6 +18,7 @@ public class SampleRestController {
     @GetMapping(value = "/hello", produces = MediaType.APPLICATION_JSON_VALUE)
     public MessageBO sayHello(){
 
+        log.info("Call recieved..................");
         return new MessageBO("Hello World!!!");
     }
     
